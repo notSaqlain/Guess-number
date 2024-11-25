@@ -4,3 +4,19 @@
  */
 
 
+function casuale(min, max) {
+    return Math.random() * (max - min) + min;
+}
+  
+function CheckNum() {
+    var NumCasuale = casuale(1, 10);
+    var num = document.getElementsByName("numero").values;
+    var tip = document.getElementById("tip").innerHTML;
+
+    if (num != NumCasuale) {
+        tip = "False";
+    } else {
+        tip = "True";
+    }
+
+}
