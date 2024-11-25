@@ -28,3 +28,9 @@ function CheckNum() {
 
     document.getElementById("tip").innerHTML = tip;
 }
+
+function Reset() {
+    document.getElementsByName("numero")[0].value = "";
+    document.getElementById("tip").innerHTML = "";
+    generaNum();
+}
