@@ -3,6 +3,18 @@ body {
     font-family: Arial, sans-serif;
 }
 
+form {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
 label {
     font-weight: bold;
 }

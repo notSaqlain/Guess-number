@@ -11,7 +11,7 @@ function casuale(min, max) {
 function CheckNum() {
     var NumCasuale = casuale(1, 10);
     var num = document.getElementsByName("numero").values;
-    var tip = document.getElementById("tip").innerHTML;
+    var tip = " ";
 
     if (num != NumCasuale) {
         tip = "False";
@@ -19,4 +19,5 @@ function CheckNum() {
         tip = "True";
     }
 
+    document.getElementById("tip").innerHTML = tip;
 }
