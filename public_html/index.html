@@ -11,14 +11,14 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <link rel="stylesheet" type="text/css" href="style.css">
         <script src="script.js"></script>
     </head>
-    <body>
+    <body onload="generaNum()">
         <form name="myForm">
             <label for="numero">Indovina il numero:</label> <br><br>
             <input type="number" id="numero" name="numero" min="1" max="10"> <br><br>
-            <input type="submit" value="Invia" onclick="CheckNum()">
-            <input type="submit" value="reset">
-            <p id="tip"></p>
+            <button type="button" onclick="CheckNum()">Invia</button>
+            <button type="button" onclick="Reset()">Reset</button>
         </form>
-        
+        <p id="tip"></p> <br>
+        <p id="t"></p>
     </body>
 </html>

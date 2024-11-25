@@ -1,19 +1,26 @@
 /* 
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/javascript.js to edit this template
- */
+*/
 
+
+var NumCasuale = 0;
 
 function casuale(min, max) {
-    return Math.random() * (max - min) + min;
+    return Math.floor(Math.random() * (max - min + 1)) + min;
 }
-  
+
+function generaNum() {
+    NumCasuale = casuale(1, 10);
+    document.getElementById("t").innerHTML = NumCasuale;
+}
+
+
 function CheckNum() {
-    var NumCasuale = casuale(1, 10);
-    var num = document.getElementsByName("numero").values;
+    var num = document.getElementsByName("numero")[0].value;
     var tip = " ";
 
-    if (num != NumCasuale) {
+    if (parseInt(num) !== NumCasuale) {
         tip = "False";
     } else {
         tip = "True";
